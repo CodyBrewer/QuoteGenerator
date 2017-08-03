@@ -1,0 +1,42 @@
+html, body, .container-table {
+	height: 100%
+}
+.container {
+	vertical-align: middle;
+}
+body {
+	background: purple;
+}
+#quote-box {
+	width: 5s0%;
+	height: 20%;
+	background-color: white;
+
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+	margin:auto;
+}
+#quote-text {
+	margin: 30px 0px 0px 0px;
+	font-family: 'Merriweather', serif;
+	font-size: 200%;
+	text-align: center;
+	color:purple;
+}
+#tumblr {
+	float: left;
+	margin: 10px 5% 0% 0%;
+}
+#twitter{
+	float: left;
+	margin: 10px 5% 0% 5%; 
+}
+#new-quote {
+	font-family: 'Ubuntu', sans-serif;
+	float: right;
+	margin: 10px 10% 0% 0%;
+}
