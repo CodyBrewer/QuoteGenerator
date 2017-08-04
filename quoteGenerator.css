@@ -1,15 +1,9 @@
-html, body, .container-table {
-	height: 100%
-}
-.container {
-	vertical-align: middle;
-}
 body {
 	background: purple;
 }
 #quote-box {
-	width: 5s0%;
-	height: 20%;
+	width: 50%;
+	height: 30%;
 	background-color: white;
 
 	position:absolute;
@@ -21,22 +15,21 @@ body {
 	margin:auto;
 }
 #quote-text {
-	margin: 30px 0px 0px 0px;
+	margin-top:27px;
 	font-family: 'Merriweather', serif;
-	font-size: 200%;
+	font-size: 20px;
 	text-align: center;
-	color:purple;
-}
-#tumblr {
-	float: left;
-	margin: 10px 5% 0% 0%;
-}
-#twitter{
-	float: left;
-	margin: 10px 5% 0% 5%; 
+	color:black;
 }
 #new-quote {
 	font-family: 'Ubuntu', sans-serif;
-	float: right;
-	margin: 10px 10% 0% 0%;
+	}
+#quote-text p {
+	font-size:15px;
+}
+.fa-twitter{
+	float:left;
+}
+.fa-tumblr{
+	float:left;
 }
