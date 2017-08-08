@@ -1,35 +1,38 @@
 body {
-	background: purple;
+  background-color: purple;
 }
-#quote-box {
-	width: 50%;
-	height: 30%;
-	background-color: white;
-
-	position:absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-
-	margin:auto;
+.quote-box {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
 }
-#quote-text {
-	margin-top:27px;
-	font-family: 'Merriweather', serif;
-	font-size: 20px;
-	text-align: center;
-	color:black;
+.quote-text {
+  text-align: center;
 }
-#new-quote {
-	font-family: 'Ubuntu', sans-serif;
-	}
-#quote-text p {
-	font-size:15px;
+#quote {
+  font-family: "Boogaloo" , cursive;
 }
-.fa-twitter{
-	float:left;
+#author{
+  font-family: "Great Vibes" , cursive;
 }
-.fa-tumblr{
-	float:left;
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+button {
+  margin:0 10 0 10;
+}
+.jumbotron {
+  width: 50vw;
+}
+.disabled {
+  opacity: 0.5;
 }

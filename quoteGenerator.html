@@ -1,17 +1,16 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="quoteGenerator.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
-	<script src="https://use.fontawesome.com/fbebbe54b2.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Great+Vibes" rel="stylesheet">
+
 </head>
 <body>
-	<div class="container">
-
-		<div id="quote-box" class="jumbotron col-md-8 col-lg-8">
-			<div id="quote-text">
+	<div class="container quote-box">
+		<div class="jumbotron">
+			<div class="quote-text">
 				<p id="quote">
 					Don't Cry because it is over, cry because it happened
 				</p>
@@ -20,16 +19,16 @@
 				</p>
 			</div>
 			<div class="container">
-				<div class="buttons col-md-6">
-					<button id="new-quote" class= "btn btn-default">Get a new quote!</button>
-					<button id="twitter" class= "btn btn-default"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-					<button id="tumblr" class= "btn btn-default"><i class="fa fa-tumblr" aria-hidden="true"></i></button>
+				<div class="row buttons">
+						<button id='getQuote' class= "btn btn-default new-quote">Get a new quote!</button>
+						<button id="tweet" class= "btn btn-default twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+						<button class= "btn btn-default tumblr"><i class="fa fa-tumblr" aria-hidden="true"></i></button>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	
+<!-- Scripts go here -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="quoteGenerator.js"></script>
 </body>
 </html>
