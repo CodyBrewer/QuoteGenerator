@@ -1,5 +1,7 @@
 body {
-  background-color: purple;
+  background-image: url("https://i.redditmedia.com/lGBeSjIYK8vDFYMz2ZstYhir00d5hF5hMjziP8u8XBQ.jpg?w=1024&s=2c4e3f8374803fa57fdb39e8da5508d1");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .quote-box {
     height: 100vh;
@@ -27,8 +29,9 @@ body {
   align-items: center;
   align-content: center;
 }
-button {
-  margin:0 10 0 10;
+.buttons {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .jumbotron {
   width: 50vw;

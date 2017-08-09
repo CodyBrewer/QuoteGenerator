@@ -6,22 +6,10 @@ $(function() {
   $('#getQuote').click(function(event) {
     event.preventDefault();
     getQuote(author, text);
-    $('#tweetOut').removeClass("disabled");
-    $('#tweetOut').html("Tweet Out!");
+    $('#tweet').removeClass("disabled");
+
   })
 });
-
-var tweetThis = "";
-$('#tweet').click(function() {
-  if (tweetThis.length > 140) {
-    tweetThis = "";
-    $(this).html("Sorry! 140 chars exceeded!");
-    $(this).addClass("disabled");
-  } else {
-    $(this).attr("href", "https://twitter.com/intent/tweet?text=" + tweetThis);
-  }
-
-})
 
 function getQuote(author, text) {
 
@@ -37,6 +25,14 @@ function getQuote(author, text) {
       author.removeAttr("href");
       author.html("<strong>Anonymous</strong>");
     }
-    tweetThis = data.quoteText + " By - " + data.quoteAuthor;
+    $('#tweet').click(function() {
+      var tweetQuote = $("#quote").text() + $("#author").text();
+        if (tweetQuote.length > 140) {
+        tweetQuote = ""; 
+        $(this).addClass("disabled");
+   } else { window.open('https://twitter.com/intent/tweet?text="' + tweetQuote + '"', '_blank');
+      };
+    });
   });
 }
+
